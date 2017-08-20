@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.roboto{
+	font-family: 'Roboto', sans-serif;
+}
+
+.cabecera{
+	background: url("../imagenes/cabecera.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	height: 580px;
+	color: white;
+
+}
+
+
+header{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	height: 80px;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	position: fixed;
+	z-index: 300;
+	//background: black;
+
+}
+
+.cabeceraNoHeader{
+	padding-top: 160px;
+
+}
+
+.logo{
+	width: 150px;
+	margin-left: 35px;
+	margin-top: 20px;
+}
+
+.espacioNav{
+	display: flex;
+
+	
+}
+.listaMenu{
+	list-style: none;
+	display: flex;
+	//align-items: center;
+
+}
+
+
+.itemMenu{
+	margin-right: 30px;
+
+}
+
+.itemMenu a{
+	color:white;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.espacioTitulo{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.titulo{
+	font-size: 40px;
+	text-shadow: 1px 1px white, -1px -1px #333;
+   	text-shadow: 1px 2px #999;
+}
+
+.subtitulo{
+	font-size: 20px;
+	margin-top: 50px;
+	text-shadow: 1px 1px #999;
+}
+
+#botonInicio{
+	background: #31384a;
+	color: #ffffff;
+	padding: 20px 60px;
+	outline: 0 none;
+	border:0;
+	font-size: 15px;
+	border-radius: 8px;
+	font-weight: bold;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+#botonInicio:hover{
+	background: #313800;
+}
+
+.centrado{
+	display: flex;
+	justify-content: center;
+}
+
+.anotacion{
+	//color: black;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.propiedadesProducto{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.col{
+	width: 500px;
+}
+
+.tituloInfo{
+	width: 100%;
+}
+
+.itemInfo{
+	display: flex;
+	align-items: center;
+	
+}
+
+.tituloPropProducto{
+
+	margin-bottom: 50px;
+}
+
+.caracteristica1{
+	background-color: #f9f9f9;
+	margin-top: 10px;
+}
+.caracteristica1-1{
+	display: flex;
+	align-items: center;
+	width: 900px;
+	margin: auto;
+
+	
+}
+
+.imagenResponsive{
+	width: 400px;
+}
+
+.caracteristica2{
+	margin-top: 20px;
+}
+
+.imagenDispositivos{
+	margin-left: 20px;
+}
+
+footer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #5BCAF3;
+}
+
+.redesSociales{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-bottom: 2px solid black;
+}
+
+
+.redesSociales a{
+	color:black;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.redesSociales a:hover{
+	color: white;
+}
+
+.redesSociales a i{
+	font-size: 25px;
+}
+
+footer .columna{
+	margin-top: 20px;
+	margin-left: 60px;
+	margin-bottom: 10px;
+}
+footer .columna h6{
+	font-size: 20px;
+}
+
+footer .columna ul{
+	list-style: none;
+	margin-top: 5px;
+}
+
+footer .columna ul li a{
+	text-decoration: none;
+	color: black;
+}
+footer .columna ul li a:hover{
+	color: white;
+}
+
+.copyRight{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}

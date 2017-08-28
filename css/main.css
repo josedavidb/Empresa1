@@ -151,6 +151,7 @@ header{
 }
 
 .caracteristica1{
+	text-align: center;
 	background-color: #f9f9f9;
 	margin-top: 10px;
 }
@@ -169,6 +170,7 @@ header{
 
 .caracteristica2{
 	margin-top: 20px;
+	text-align: center;
 }
 
 .imagenDispositivos{

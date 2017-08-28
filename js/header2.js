@@ -1,17 +1,5 @@
 $(document).ready(function(){
 	var menuActivado = false;
-
-	$(document).on("scroll", function(){
-	var header = $("header");
-	var desplazamientoActual = $(document).scrollTop();
-	if (desplazamientoActual > 0 || menuActivado==true){
-		header.css("background","#292929");
-	};
-	if (desplazamientoActual == 0 && menuActivado==false){
-		header.css("background","none");
-	}
-});
-	
 	$("#botonMenu").on("click",function(e){
 		if (menuActivado==false){
 

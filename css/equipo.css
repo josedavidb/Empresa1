@@ -15,9 +15,6 @@ header{
 	justify-content: space-around;
 	width: 100%;
 	align-items: center;
-	height: 80px;
-	padding-top: 50px;
-	padding-bottom: 60px;
 	position: fixed;
 	z-index: 300;
 	background: #4E4E4E;
@@ -27,7 +24,6 @@ header{
 .logo{
 	width: 150px;
 	margin-left: 35px;
-	margin-top: 20px;
 }
 
 .espacioNav{
@@ -55,7 +51,7 @@ header{
 }
 
 .titulo{
-	padding-top: 160px;
+	padding-top: 190px;
 	margin-left: 80px;
 	width: 60%;
 	border-bottom: 1px solid black;
@@ -172,4 +168,95 @@ footer .columna ul li a:hover{
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
+}
+
+@media (max-width: 790px){
+
+	header{
+		flex-wrap: wrap;
+	}
+	.espacioLogo{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#botonMenu{
+		display: block;
+		color: white;
+		font-size: 40px;
+		margin-top: 55px;
+		margin-right: 100px;
+		cursor: pointer;
+	}
+
+	.espacioNav{
+		display: none;
+	}
+
+
+
+	nav{
+		width: 100%;
+	}
+	.itemMenu{
+		width: 100%;
+	}
+	.itemMenu a{
+		display: block;
+	}
+
+	.itemMenu a:hover{
+		color: #5BCAF3;
+		background: grey;
+	}
+}
+
+@media (max-width: 550px){
+	.titulo{
+		font-size: 25px;
+	}
+
+	.subtitulo{
+		font-size: 19px;
+	}
+
+
+}
+
+@media (max-width: 450px){
+	.titulo{
+		font-size: 15px;
+	}
+	.espacioImagen1{
+		font-size: 12px;
+	}
+
+	.espacioImagen1 h1{
+		font-size: 18px;
+	}
+
+	#botonMenu{
+		margin-right: 30px;
+		margin-top: 35px;
+		font-size: 30px;
+	}
+
+	.logo{
+		width: 80px;
+	}
+}
+
+@media (max-width: 350px){
+
+	body{
+		font-size: 13px;
+	}
+	.titulo{
+		font-size: 13px;
+	}
+
+	.subtitulo{
+		font-size: 15px;
+	}
 }

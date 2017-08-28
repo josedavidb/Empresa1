@@ -5,7 +5,9 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+html,body{
+	min-height: 100%;
+}
 .roboto{
 	font-family: 'Roboto', sans-serif;
 }
@@ -15,9 +17,6 @@ header{
 	justify-content: space-around;
 	width: 100%;
 	align-items: center;
-	height: 80px;
-	padding-top: 50px;
-	padding-bottom: 60px;
 	position: fixed;
 	z-index: 300;
 	background: #4E4E4E;
@@ -27,7 +26,11 @@ header{
 .logo{
 	width: 150px;
 	margin-left: 35px;
-	margin-top: 20px;
+	margin-top: 0px;
+}
+
+#botonMenu{
+	display: none;
 }
 
 .espacioNav{
@@ -55,34 +58,45 @@ header{
 }
 
 .titulo{
-	padding-top: 160px;
+	padding-top: 190px;
 	margin-left: 80px;
 	width: 60%;
 	border-bottom: 1px solid black;
 
 }
 .tablaDeComparacion{
+
 	margin-top: 100px;
-	display: flex;
-	justify-content: center;
+	margin-bottom: 50px;
 }
 
 table{
+	margin: auto;
 	border: 1px solid;
 	border-collapse: collapse;
 	text-align: center;
+}
+
+table td{
+	//text-align: right;
 }
 
 table thead th{
 	border-bottom: 1px solid;
 	border-left: 1px solid;
 	padding: 10px;
+	//text-align: right;
 }
 
+table tbody tr{
+	text-align: center;
+}
 table tbody td{
 	border-right: 1px solid;
 	border-top: 1px solid;
 	padding: 10px;
+	//text-align: center;
+
 
 }
 
@@ -106,8 +120,7 @@ footer{
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #5BCAF3;
-	position: absolute;
-	bottom: 0;
+	margin-top: 200px;
 }
 
 .redesSociales{
@@ -162,4 +175,125 @@ footer .columna ul li a:hover{
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
+	text-align: center;
+}
+
+@media (max-width: 790px){
+
+	header{
+		flex-wrap: wrap;
+	}
+	.espacioLogo{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#botonMenu{
+		display: block;
+		color: white;
+		font-size: 40px;
+		margin-top: 55px;
+		margin-right: 100px;
+		cursor: pointer;
+	}
+
+	.espacioNav{
+		display: none;
+	}
+
+
+
+	nav{
+		width: 100%;
+	}
+	.itemMenu{
+		width: 100%;
+	}
+	.itemMenu a{
+		display: block;
+	}
+
+	.itemMenu a:hover{
+		color: #5BCAF3;
+		background: grey;
+	}
+}
+
+@media (max-width: 550px){
+	.titulo{
+		font-size: 25px;
+	}
+
+	.subtitulo{
+		font-size: 19px;
+	}
+
+
+}
+
+@media (max-width: 450px){
+	.titulo{
+		font-size: 15px;
+	}
+	.espacioImagen1{
+		font-size: 12px;
+	}
+
+	.espacioImagen1 h1{
+		font-size: 18px;
+	}
+
+	#botonMenu{
+		margin-right: 30px;
+		margin-top: 35px;
+		font-size: 30px;
+	}
+
+	.logo{
+		width: 80px;
+	}
+}
+
+@media (max-width: 350px){
+
+	body{
+		font-size: 13px;
+	}
+	.titulo{
+		font-size: 13px;
+	}
+
+	.subtitulo{
+		font-size: 15px;
+	}
+}
+
+
+
+table{
+	min-width: 800px;
+
+}
+
+
+
+.tablaDeComparacion{
+	overflow-x: auto;
+
+}
+
+td:nth-child(1){
+	position: absolute;
+	background: white;
+	width: 10em;
+	height: 60px;
+}
+
+th:nth-child(1){
+	width: 10em;
+
+
+
+
 }

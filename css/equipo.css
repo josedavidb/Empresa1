@@ -86,7 +86,8 @@ header{
 }
 
 .espacioEquipo .columna{
-	margin-right: 80px;
+	margin-right: 40px;
+	margin-left: 40px;
 }
 
 .columnaEspecial{
@@ -102,6 +103,7 @@ header{
 	height: 150px;
 	border-radius: 100px;
 	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 }
 
 .espacioEquipo .columna .persona img:hover{
@@ -209,6 +211,10 @@ footer .columna ul li a:hover{
 	.itemMenu a:hover{
 		color: #5BCAF3;
 		background: grey;
+	}
+
+	.espacioEquipo .columna{
+		margin-right: 0px;
 	}
 }
 

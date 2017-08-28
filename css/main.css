@@ -141,6 +141,10 @@ header{
 	
 }
 
+.itemInfo img{
+	min-width: 113px;
+}
+
 .tituloPropProducto{
 
 	margin-bottom: 50px;
